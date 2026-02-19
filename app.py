@@ -1,1 +1,1 @@
-print("Hello World - Develop Branch")
+print("Hello World - Resolved Conflict")
