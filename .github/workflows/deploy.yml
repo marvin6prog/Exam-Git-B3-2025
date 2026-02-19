@@ -1,0 +1,16 @@
+name: Deployment Workflow
+on:
+  push:
+    branches: [ main ]
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Affichage début
+        run: echo "Début du déploiement"
+      - name: Récupération du secret
+        run: echo "Valeur du secret DEPLOY_TOKEN :${{ secrets.DEPLOY_TOKEN }}"
+      - name: Affichage fin
+        run: echo "Déploiement terminé par Tony Marvin Nkou"
